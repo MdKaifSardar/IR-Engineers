@@ -1,5 +1,3 @@
-import React from "react";
-
 interface MapElementProps {
   content: {
     title: string;
@@ -7,15 +5,14 @@ interface MapElementProps {
     image: string;
   };
 }
-
-const LeftMapElement: React.FC<MapElementProps> = ({ content }) => {
+const DesktopLeft = ({ content }: MapElementProps) => {
   return (
-    <div className="relative px-20 py-10 gap-10  w-full h-fit flex felx-row justify-center items-start">
-      <div className="gap-1 w-fit h-fit flex flex-col justify-center items-start">
+    <div className="md:flex hidden flex-row justify-center items-start gap-5 w-[90%]">
+      <div className="gap-2 w-fit h-fit flex flex-col justify-center items-start">
         <div className="text-left text-blue-900 font-sans font-bold md:text-4xl text-2xl">
           {content.title}
         </div>
-        <div className="pt-5 border-t-[2px] border-blue-900 text-left md:text-xl text-lg">
+        <div className="md:block hidden pt-5 border-t-[2px] border-blue-900 text-left md:text-xl text-lg">
           {content.text}
         </div>
       </div>
@@ -28,4 +25,4 @@ const LeftMapElement: React.FC<MapElementProps> = ({ content }) => {
   );
 };
 
-export default LeftMapElement;
+export default DesktopLeft;

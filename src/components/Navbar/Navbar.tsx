@@ -5,8 +5,10 @@ import { IoMdMenu } from "react-icons/io";
 const Navbar = () => {
   return (
     <div className="z-[10] py-2 w-full h-fit fixed bg-gray-800 flex flex-row justify-between px-5 items-center">
-      <img src={logo} alt="logo" className="w-[10%] sm:w-[5%] h-auto" />
-      <div className="hidden md:flex flex-row justify-center items-center gap-5 w-[90%] ">
+      <Link className="sm:w-[5%] w-[10%] h-fit" to="/">
+        <img src={logo} alt="logo" className="w-full h-auto" />
+      </Link>
+      <div className="hidden w-[90%] md:flex flex-row justify-center items-center gap-5">
         <Link
           to="/whychooseus"
           className="md:text-xl text-md text-white font-sans font-semibold"
@@ -30,7 +32,7 @@ const Navbar = () => {
           className="md:text-xl text-md text-white font-sans font-semibold"
         >
           Contact Us
-        </Link> 
+        </Link>
       </div>
       <div className="block md:hidden">
         <IoMdMenu className="text-center text-white text-2xl" />
