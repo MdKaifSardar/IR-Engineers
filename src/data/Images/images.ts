@@ -17,6 +17,7 @@ import logoYellow from "../../assets/logos/companyLogo/yellow.png";
 import phoneLogo from "../../assets/logos/phone.png";
 import gmailLogo from "../../assets/logos/gmail.png";
 import rewiewsBg from "../../assets/Images/reviewsBg.png";
+import sidePopup from "../../assets/Images/popupSide.png"
 
 export {
   rewiewsBg,
@@ -38,4 +39,5 @@ export {
   logoWhite,
   phoneLogo,
   gmailLogo,
+  sidePopup,
 };

@@ -7,7 +7,7 @@ const CopyrightComponent = () => {
         <FaArrowUp className="text-yellow-500 text-2xl" />
       </button>
       <div className="text-center md:text-xl text-sm text-black">
-        © Copyright 2024 IR Engineers | developed by lorem ipsum.
+        © Copyright 2024 IR Engineers | developed by Asit mondal.
       </div>
     </div>
   );

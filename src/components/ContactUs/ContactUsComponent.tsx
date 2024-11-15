@@ -64,7 +64,7 @@ const ContactUsComponent: React.FC = () => {
 
       {/* side image area */}
 
-      <div className="lg:flex hidden h-screen w-[40%] flex-col items-center mt-[30%]">
+      <div className="z-[-1] lg:flex hidden h-screen w-[40%] flex-col items-center mt-[30%]">
         <img
           src={contactUs2}
           alt="side image"

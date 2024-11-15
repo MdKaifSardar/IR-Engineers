@@ -8,13 +8,15 @@ import { AboutSide1, AboutSide2 } from "../../data/Images/images";
 
 const AboutComponent: React.FC = () => {
   return (
-    <div className="py-5 relative h-full lg:h-screen flex flex-row items-center justify-center overflow-hidden w-full">
+    <div className="z-[-1] py-5 relative h-full lg:h-screen flex flex-row items-center justify-center overflow-hidden w-full">
       <div className="px-10 z-30 lg:pl-[10%] w-full gap-5 md:gap-12 flex flex-col justify-center items-start">
         <div className="w-full lg:hidden flex flex-col justify-center items-center gap-2">
           <div className="text-[#003F63] sm:text-4xl text-3xl font-bold">
             {SideText.title}
           </div>
-          <div className="text-center w-[95%] md:w-[60%]">{SideText.bottomText}</div>
+          <div className="text-center w-[95%] md:w-[60%]">
+            {SideText.bottomText}
+          </div>
         </div>
         <div className="lg:text-left text-center lg:w-[60%] w-[100%]">
           {MainTextFirst}
@@ -41,9 +43,11 @@ const AboutComponent: React.FC = () => {
             </div>
             <div className="text-right">{SideText.bottomText}</div>
           </div>
-          <button className="w-fit px-[10%] py-1 border-[1px]">
-            {SideText.buttonText}
-          </button>
+          <div className="mt-3 flex flex-row justify-end items-end">
+            <button className="w-fit px-[10%] py-1 border-[1px]">
+              {SideText.buttonText}
+            </button>
+          </div>
         </div>
       </div>
     </div>

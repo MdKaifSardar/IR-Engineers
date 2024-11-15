@@ -5,11 +5,13 @@ import NavbarSecond from "../components/NavbarSecond/NavbarSecond";
 import OurClientsComponent from "../components/OurClients/OurClientsComponent";
 import ServicesDetailsComponent from "../components/OurServicesDetails/ServicesDetailsComponent";
 import QuickLinksComp from "../components/QuickLinks/QuickLinksComp";
+import SidePopupComponent from "../components/SidePopup/SidePopup";
 
 const OurServices = () => {
   return (
     <div className="w-full h-fit">
       <NavbarSecond title="Our Services" />
+      <SidePopupComponent/>
       <ServicesDetailsComponent />
       <ContactUsComponent />
       <OurClientsComponent />

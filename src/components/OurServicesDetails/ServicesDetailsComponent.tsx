@@ -23,11 +23,11 @@ const ServicesDetailsComponent = () => {
                 key={index}
                 className="w-[20vh] md:w-[34vh] h-[20vh] md:h-[34vh] flex flex-col justify-center items-center"
               >
-                <div className="w-full h-full bg-black">
-                  {/* <img src={logo} alt="" /> */}
+                <div className="overflow-hidden w-full h-full">
+                  <img src={content.image} alt={content.title} className="w-full h-full object-cover" />
                 </div>
                 <div className="w-full h-fit p-1 text-center border-[1px] border-black font-sans font-semibold">
-                  {content}
+                  {content.title}
                 </div>
               </div>
             ))}

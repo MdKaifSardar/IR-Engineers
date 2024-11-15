@@ -18,7 +18,7 @@ const Navbar = () => {
           Why Choose Us
         </Link>
         <Link
-          to="/whychooseus"
+          to="/ourservice"
           className="md:text-xl text-md text-white font-sans font-semibold"
         >
           Our Services
@@ -38,13 +38,13 @@ const Navbar = () => {
       </div>
 
       {/* moile navbar */}
-      <div className="block md:hidden">
+      <div className="z-[2] w-full flex flex-row justify-end items-center md:hidden">
         <IoMdMenu
           className="text-center text-white text-2xl"
           onClick={() => setIsOpen(!isOpen)}
         />
         <div
-          className={`absolute left-0 w-full top-10 bg-[#353D40] transition-all duration-300 overflow-hidden ${
+          className={`absolute w-[65%] right-0 top-8 bg-[#353D40] transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
           }`}
         >

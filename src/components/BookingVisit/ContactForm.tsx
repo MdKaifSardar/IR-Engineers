@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { formFields } from "../../data/Text/FormText";
 
-const ContactForm = () => {
+const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     contactNo: "",
@@ -10,10 +11,54 @@ const ContactForm = () => {
     address: "",
   });
 
+  const [errors, setErrors] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form data:", formData);
+
+    // Check if all fields are filled
+    const isFormValid = Object.values(formData).every(
+      (value) => value.trim() !== ""
+    );
+
+    if (!isFormValid) {
+      setErrors(true);
+      return;
+    }
+
+    setErrors(false);
+
+    // Sending the form data using EmailJS
+    emailjs
+      .send(
+        "service_9xz291i",
+        "template_xdpdtbt",
+        { ...formData },
+        "oA29HjwIHXbhy5WeN"
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email successfully sent!",
+            response.status,
+            response.text
+          );
+          alert("Form submitted successfully!");
+          setFormData({
+            name: "",
+            contactNo: "",
+            specification: "",
+            workDescription: "",
+            address: "",
+          });
+        },
+        (error) => {
+          console.error("Failed to send email.", error);
+          alert("Something went wrong. Please try again later.");
+        }
+      );
   };
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -23,6 +68,7 @@ const ContactForm = () => {
       [name]: value,
     }));
   };
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -50,6 +96,12 @@ const ContactForm = () => {
                 onChange={handleChange}
                 className="placeholder:text-xl border-b-[1px] border-black text-center placeholder-black focus:outline-none focus:ring-0 p-3 focus:ring-blue-500"
               />
+            )}
+            {/* Display error message */}
+            {errors && !formData[field.id as keyof typeof formData].trim() && (
+              <span className="text-red-500 text-sm">
+                This field is required
+              </span>
             )}
           </div>
         ))}
