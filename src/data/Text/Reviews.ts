@@ -30,3 +30,7 @@ const customerReviews = [
         stars: 5
     },
 ]
+
+export{
+    customerReviews
+}
