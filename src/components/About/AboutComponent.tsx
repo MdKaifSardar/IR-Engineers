@@ -3,7 +3,7 @@ import {
   MainTextFirst,
   MainTextSecond,
   SideText,
-} from "../../data/Text.ts/AboutText";
+} from "../../data/Text/AboutText";
 import { AboutSide1, AboutSide2 } from "../../data/Images/images";
 
 const AboutComponent: React.FC = () => {

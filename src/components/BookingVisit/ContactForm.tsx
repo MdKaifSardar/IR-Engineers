@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { formFields } from "../../data/Text.ts/FormText";
+import { formFields } from "../../data/Text/FormText";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +26,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="z-10 w-full max-w-lg mx-auto bg-white space-y-4 rounded-3xl"
+      className="z-[0] w-full max-w-lg mx-auto bg-white space-y-4 rounded-3xl"
     >
       <div className="border-[1px] border-[#003F63] p-5 rounded-3xl">
         {formFields.map((field, index) => (

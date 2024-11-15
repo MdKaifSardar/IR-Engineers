@@ -1,5 +1,5 @@
 import { WhChU1, WhChU2 } from "../../data/Images/images";
-import { WhyChooseUsText } from "../../data/Text.ts/WhyChooseUs";
+import { WhyChooseUsText } from "../../data/Text/WhyChooseUs";
 
 const WhyChooseComp = () => {
   return (

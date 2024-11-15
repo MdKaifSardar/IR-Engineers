@@ -1,5 +1,5 @@
 import { logos } from "../../data/Images/Clients";
-import { MainContent } from "../../data/Text.ts/OurClients";
+import { MainContent } from "../../data/Text/OurClients";
 
 const OurClientsComponent = () => {
   return (

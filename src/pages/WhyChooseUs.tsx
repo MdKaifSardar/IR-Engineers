@@ -7,8 +7,8 @@ import QuickLinksComp from "../components/QuickLinks/QuickLinksComp";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full h-screen">
-      <NavbarSecond/>
+    <div className="w-full h-fit">
+      <NavbarSecond title="Why Choose Us?"/>
       <DetailsComponent />
       <OurClientsComponent />
       <ContactForm />

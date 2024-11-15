@@ -1,4 +1,4 @@
-import { MainHeroText } from "../../data/Text.ts/HeroText";
+import { MainHeroText } from "../../data/Text/HeroText";
 
 const HeroText = () => {
   return (

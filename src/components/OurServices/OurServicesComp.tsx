@@ -1,5 +1,5 @@
 import { OurService } from "../../data/Images/images";
-import { BoxContent, MainText } from "../../data/Text.ts/OurServices";
+import { BoxContent, MainText } from "../../data/Text/OurServices";
 
 const OurServicesComp = () => {
   return (

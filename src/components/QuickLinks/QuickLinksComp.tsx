@@ -1,4 +1,4 @@
-import { Links, Social } from "../../data/Text.ts/QuickLinks";
+import { Links, Social } from "../../data/Text/QuickLinks";
 import { logo } from "../../data/Images/images";
 
 const QuickLinksComp = () => {

@@ -1,5 +1,5 @@
 const MainContent = {
-    title: "Out Clients",
+    title: "Our Clients",
     buttonText: "View More Clients"
 }
 
