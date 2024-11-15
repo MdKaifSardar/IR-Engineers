@@ -20,7 +20,7 @@ const OurServicesComp = () => {
       <div className="gap-3 md:gap-6 flex flex-wrap justify-center items-center w-[90%] md:w-[100%]">
         {BoxContent.map((text, index) => (
           <div
-            className="relative flex flex-row justify-center text-center items-center w-[23vh] sm:w-[23vh] md:w-[32vh] h-[23vh] sm:h-[23vh] md:h-[32vh]"
+            className="relative flex flex-row justify-center text-center items-center w-[20vh] sm:w-[23vh] md:w-[32vh] h-[20vh] sm:h-[23vh] md:h-[32vh]"
             key={index}
           >
             <img
