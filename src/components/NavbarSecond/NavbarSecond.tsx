@@ -43,19 +43,19 @@ const NavbarSecond = ({ title }: { title: string }) => {
             Why Choose Us
           </Link>
           <Link
-            to="/whychooseus"
+            to="/ourservice"
             className="md:text-xl text-md text-white font-sans font-semibold"
           >
             Our Services
           </Link>
           <Link
-            to="/whychooseus"
+            to="/"
             className="md:text-xl text-md text-white font-sans font-semibold"
           >
             Get a visit
           </Link>
           <Link
-            to="/whychooseus"
+            to="/"
             className="md:text-xl text-md text-white font-sans font-semibold"
           >
             Contact Us
