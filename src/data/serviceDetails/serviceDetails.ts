@@ -1,5 +1,6 @@
 import {
   CeilingPainting,
+  ConcreteFixing,
   CrackRepairing,
   DoorPainting,
   ExteriorPainting,
@@ -61,8 +62,8 @@ const services = [
         image: RoofRepairing,
       },
       {
-        title: "Roof Repairing",
-        image: RoofRepairing,
+        title: "Concrete Fixing",
+        image: ConcreteFixing,
       },
     ],
   },
