@@ -33,7 +33,7 @@ import MosaicFlooring from "../../assets/Images/Flooring Solutions/mosaicFloorin
 import GraniteFlooring from "../../assets/Images/Flooring Solutions/graniteFlooring.jpg";
 import LaminateFlooring from "../../assets/Images/Flooring Solutions/laminateFlooring.jpeg";
 import MarbelFlooring from "../../assets/Images/Flooring Solutions/marbelFlooring.jpg";
-import tileFlooring from "../../assets/Images/Flooring Solutions/tileFlooring.webp"
+import tileFlooring from "../../assets/Images/Flooring Solutions/tileFlooring.jpg"
 
 export {
   WallRepairing,
