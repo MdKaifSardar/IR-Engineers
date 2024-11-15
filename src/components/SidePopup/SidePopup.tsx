@@ -5,7 +5,7 @@ const SidePopupComponent = () => {
   return (
     <Link
       to="#"
-      className="h-[5%] z-[4] fixed right-0 top-[50%]"
+      className="h-[4%] sm:h-[5%] z-[4] fixed right-0 top-[50%]"
       onClick={() => window.open("mailto:contactus@irengineers.in")}
     >
       <img
