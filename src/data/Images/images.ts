@@ -16,8 +16,10 @@ import logoWhite from "../../assets/logos/companyLogo/white.png";
 import logoYellow from "../../assets/logos/companyLogo/yellow.png";
 import phoneLogo from "../../assets/logos/phone.png";
 import gmailLogo from "../../assets/logos/gmail.png";
+import rewiewsBg from "../../assets/Images/reviewsBg.png";
 
 export {
+  rewiewsBg,
   AboutSide1,
   AboutSide2,
   OurService,

@@ -19,7 +19,7 @@ const NavbarSecond = ({ title }: { title: string }) => {
       <img
         src={nav1}
         alt="side image"
-        className="z-[1] left-0 h-[100%] w-auto absolute top-0 right-0 object-contain"
+        className="z-[2] left-0 h-[100%] w-auto absolute top-0 right-0 object-contain"
       />
       <img
         src={nav2}
@@ -30,10 +30,10 @@ const NavbarSecond = ({ title }: { title: string }) => {
         <img
           src={logo}
           alt="company logo"
-          className="ml-5 absolute inset-0 my-auto z-[1] h-[40%] object-contain"
+          className="z-[2] ml-5 absolute inset-0 my-auto h-[40%] object-contain"
         />
       </Link>
-      <div className="custom-shadow z-[0] py-2 w-full h-[5%] md:h-[10%] fixed bg-[#353D40] flex flex-row justify-between px-5 items-center">
+      <div className="custom-shadow z-[1] py-2 w-full h-[5%] md:h-[10%] fixed bg-[#353D40] flex flex-row justify-between px-5 items-center">
         {/* <div className="custom-shadow absolute bottom-0 left-0 w-full"/> */}
         <div className="hidden md:flex flex-row justify-center items-center gap-5 h-fit w-full">
           <Link

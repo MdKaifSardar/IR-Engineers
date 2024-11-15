@@ -11,11 +11,11 @@ const ServicesDetailsComponent = () => {
           } gap-3`}
         >
           <div className="relative w-fit h-fit flex flex-row justify-center items-center">
-            <div className="z-[0] text-md sm:text-xl md:text-2xl bg-[#003F63] text-white font-sans font-semibold p-2">
+            <div className="z-[-1] text-md sm:text-xl md:text-2xl bg-[#003F63] text-white font-sans font-semibold p-2">
               {service.title}
             </div>
             {/* <div className="w-0 h-0 border-l-[50px] border-b-[50px] border-transparent border-l-blue-500 border-b-blue-500"></div> */}
-            <div className="z-[-1] bg-yellow-500 w-full h-full absolute top-1 left-2"></div>
+            <div className="z-[-2] bg-yellow-500 w-full h-full absolute top-1 left-2"></div>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-3">
             {service.content.map((content, index) => (

@@ -6,7 +6,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="z-[10] py-2 w-full h-fit fixed bg-[#353D40] flex flex-row justify-between px-5 items-center">
+    <div className="z-10 py-2 w-full h-fit fixed bg-[#353D40] flex flex-row justify-between px-5 items-center">
       <Link className="sm:w-[5%] w-[10%] h-fit" to="/">
         <img src={logo} alt="logo" className="w-full h-auto" />
       </Link>
