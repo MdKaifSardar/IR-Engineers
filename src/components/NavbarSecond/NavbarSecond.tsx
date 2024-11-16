@@ -5,6 +5,11 @@ import { useState } from "react";
 
 const NavbarSecond = ({ title }: { title: string }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="w-full h-[20vh] md:h-[40vh] overflow-hidden relative">
       <div className="pb-3 pr-3 md:p-10 absolute bottom-0 right-0 text-right text-black font-semibold text-xl md:text-4xl font-sans z-[0]">
@@ -26,7 +31,7 @@ const NavbarSecond = ({ title }: { title: string }) => {
         alt="side image"
         className="z-[-1] h-[70%] absolute bottom-0 left-[10%] sm:left-[7%] md:left-[11%] lg:left-[6%] object-contain"
       />
-      <Link to="/">
+      <Link to="/" onClick={handleScrollToTop}>
         <img
           src={logo}
           alt="company logo"
@@ -34,29 +39,32 @@ const NavbarSecond = ({ title }: { title: string }) => {
         />
       </Link>
       <div className="custom-shadow z-[1] py-2 w-full h-[5%] md:h-[10%] fixed bg-[#353D40] flex flex-row justify-between px-5 items-center">
-        {/* <div className="custom-shadow absolute bottom-0 left-0 w-full"/> */}
         <div className="hidden md:flex flex-row justify-center items-center gap-5 h-fit w-full">
           <Link
             to="/whychooseus"
             className="md:text-xl text-md text-white font-sans font-semibold"
+            onClick={handleScrollToTop}
           >
             Why Choose Us
           </Link>
           <Link
             to="/ourservice"
             className="md:text-xl text-md text-white font-sans font-semibold"
+            onClick={handleScrollToTop}
           >
             Our Services
           </Link>
           <Link
             to="/"
             className="md:text-xl text-md text-white font-sans font-semibold"
+            onClick={handleScrollToTop}
           >
-            Get a visit
+            Get a Visit
           </Link>
           <Link
             to="/"
             className="md:text-xl text-md text-white font-sans font-semibold"
+            onClick={handleScrollToTop}
           >
             Contact Us
           </Link>
@@ -73,16 +81,24 @@ const NavbarSecond = ({ title }: { title: string }) => {
           >
             <ul className="flex flex-col justify-center items-center space-y-2 text-white text-lg py-4 px-4">
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/whychooseus">Why Choose Us</Link>
+                <Link to="/whychooseus" onClick={handleScrollToTop}>
+                  Why Choose Us
+                </Link>
               </li>
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/ourservice">Our Services</Link>
+                <Link to="/ourservice" onClick={handleScrollToTop}>
+                  Our Services
+                </Link>
               </li>
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/">Get a Visit</Link>
+                <Link to="/" onClick={handleScrollToTop}>
+                  Get a Visit
+                </Link>
               </li>
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/">Contact Us</Link>
+                <Link to="/" onClick={handleScrollToTop}>
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
