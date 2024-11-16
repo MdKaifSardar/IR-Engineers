@@ -1,18 +1,19 @@
 import { Links, Social } from "../../data/Text/QuickLinks";
 import { logo } from "../../data/Images/images";
+import { Link } from "react-router-dom";
 
 const QuickLinksComp = () => {
   return (
     <div className="py-3 bg-[#353D40] flex flex-row justify-evenly items-center w-full">
       <div className="flex flex-col justify-center items-start gap-2">
         {Links.map((link, index) => (
-          <a
-            href={link.url}
+          <Link
+            to={link.url}
             key={index}
             className="text-left text-white sm:text-xl text-sm"
           >
             {link.text}
-          </a>
+          </Link>
         ))}
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -21,13 +22,13 @@ const QuickLinksComp = () => {
         </div>
         <div className="flex flex-row justify-center items-center">
           {Social.map((link, index) => (
-            <a href={link.url} key={index}>
+            <Link to={link.url} key={index}>
               <img
                 className="h-8 md:h-10 w-8 md:w-10"
                 src={link.image}
                 alt="social image"
               />
-            </a>
+            </Link>
           ))}
         </div>
       </div>
