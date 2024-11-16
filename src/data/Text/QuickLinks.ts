@@ -4,10 +4,6 @@ import instaURL from "../../assets/logos/social/ri_instagram-fill.png"
 
 const Links = [
     {
-        text: "Quick Links",
-        url: "/"
-    },
-    {
         text: "Our Services",
         url: "/ourservice"
     },

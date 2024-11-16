@@ -3,14 +3,22 @@ import { logo } from "../../data/Images/images";
 import { Link } from "react-router-dom";
 
 const QuickLinksComp = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
+
   return (
     <div className="py-3 bg-[#353D40] flex flex-row justify-evenly items-center w-full">
       <div className="flex flex-col justify-center items-start gap-2">
+        <span className="text-left sm:text-2xl text-md font-sans font-semibold text-yellow-500">
+          Quick Links
+        </span>
         {Links.map((link, index) => (
           <Link
             to={link.url}
             key={index}
             className="text-left text-white sm:text-xl text-sm"
+            onClick={handleLinkClick}
           >
             {link.text}
           </Link>
@@ -22,7 +30,7 @@ const QuickLinksComp = () => {
         </div>
         <div className="flex flex-row justify-center items-center">
           {Social.map((link, index) => (
-            <Link to={link.url} key={index}>
+            <Link to={link.url} key={index} onClick={handleLinkClick}>
               <img
                 className="h-8 md:h-10 w-8 md:w-10"
                 src={link.image}
