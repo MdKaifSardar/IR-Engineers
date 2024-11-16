@@ -1,4 +1,4 @@
-import CarouselReviewComponent from "../components/CarouselReview/CarouselReviewComponent";
+// import CarouselReviewComponent from "../components/CarouselReview/CarouselReviewComponent";
 import ContactUsComponent from "../components/ContactUs/ContactUsComponent";
 import CopyrightComponent from "../components/Copyright/CopyrightComponent";
 import NavbarSecond from "../components/NavbarSecond/NavbarSecond";
@@ -15,7 +15,7 @@ const OurServices = () => {
       <ServicesDetailsComponent />
       <ContactUsComponent />
       <OurClientsComponent />
-      <CarouselReviewComponent />
+      {/* <CarouselReviewComponent /> */}
       <QuickLinksComp />
       <CopyrightComponent />
     </div>

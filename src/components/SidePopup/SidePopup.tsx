@@ -6,7 +6,7 @@ const SidePopupComponent = () => {
     <Link
       to="#"
       className="h-[4%] sm:h-[5%] z-[4] fixed right-0 top-[50%]"
-      onClick={() => window.open("mailto:contactus@irengineers.in")}
+      onClick={() => (window.location.href = "tel:+1234567890")} // Replace with your desired phone number
     >
       <img
         src={sidePopup}

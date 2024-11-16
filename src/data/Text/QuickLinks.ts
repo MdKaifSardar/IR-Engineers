@@ -9,11 +9,11 @@ const Links = [
     },
     {
         text: "Our Services",
-        url: "/"
+        url: "/ourservice"
     },
     {
         text: "Why Choose Us",
-        url: "/"
+        url: "/whychooseus"
     },
     {
         text: "Our Clients",
@@ -24,7 +24,7 @@ const Links = [
         url: "/"
     },
     {
-        text: "Connect Us",
+        text: "Conntact Us",
         url: "/"
     },
 ]

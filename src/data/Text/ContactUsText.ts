@@ -16,6 +16,6 @@ const socialMedia = [
   { name: "google", url: "/", image: google },
 ];
 const phoneNo = "+91 89100 01691";
-const email = "irengineers20@gmail.com";
+const email = "contactus@irengineers.in";
 
 export { companyName, gstNo, address, socialMedia, phoneNo, email, ContactSideText };
