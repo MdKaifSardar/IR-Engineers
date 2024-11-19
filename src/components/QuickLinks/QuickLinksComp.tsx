@@ -88,12 +88,23 @@ const QuickLinksComp: React.FC = () => {
       <div className="md:block hidden">
         <LogoTextComponent />
       </div>
-      <div>
+      <div className="flex flex-col justify-center items-center">
         <img
           src={logo}
-          className="w-20 md:w-40 h-20 md:h-40"
+          className="w-[15vh] md:w-20 h-[15vh] md:h-20"
           alt="company logo"
         />
+        <div className="md:flex hidden flex-row justify-center items-center">
+          {Social.map((link, index) => (
+            <Link to={link.url} key={index}>
+              <img
+                className="h-8 md:h-10 w-8 md:w-10"
+                src={link.image}
+                alt="social image"
+              />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

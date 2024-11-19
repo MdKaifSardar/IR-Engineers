@@ -11,7 +11,7 @@ const OurClientsComponent = () => {
         ))}
       </div>
       <div>
-        <button className="border-0 lg:border-[1px] bg-[#003F63] text-white md:text-[#003F63] md:bg-transparent border-black px-5 py-2">{MainContent.buttonText}</button>
+        <button className="border-0 lg:border-[1px] bg-[#003F63] text-white lg:text-[#003F63] lg:bg-transparent border-black px-5 py-2">{MainContent.buttonText}</button>
       </div>
     </div>
   );
