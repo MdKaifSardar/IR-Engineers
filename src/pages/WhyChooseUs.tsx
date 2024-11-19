@@ -12,15 +12,13 @@ const WhyChooseUs: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if the URL contains the scrollTo query parameter
     const params = new URLSearchParams(location.search);
     const scrollTo = params.get("scrollTo");
 
     if (scrollTo) {
-      // Scroll to the specified component instantly
       const element = document.getElementById(scrollTo);
       if (element) {
-        element.scrollIntoView(); // Instant scrolling
+        element.scrollIntoView({ block: "center" });
       }
     }
   }, [location]);

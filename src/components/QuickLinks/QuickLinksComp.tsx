@@ -43,7 +43,7 @@ const QuickLinksComp: React.FC = () => {
         // Scroll within the same page
         const element = document.getElementById(target.scrollTo);
         if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
+          element.scrollIntoView({ behavior: "instant", block: "center" });
         }
       } else {
         // Navigate to the target page with scrollTo parameter
