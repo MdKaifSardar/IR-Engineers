@@ -17,6 +17,7 @@ const QuickLinksComp: React.FC = () => {
     // Links that should just navigate to their URLs
     if (link.text === "Our Services" || link.text === "Why Choose Us") {
       navigate(link.url);
+      window.scrollTo(0, 0);
       return;
     }
 
