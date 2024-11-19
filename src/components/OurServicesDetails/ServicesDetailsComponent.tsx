@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { services } from "../../data/serviceDetails/serviceDetails";
 
 const ServicesDetailsComponent = () => {
@@ -18,7 +19,8 @@ const ServicesDetailsComponent = () => {
           </div>
           <div className="flex flex-wrap justify-center items-center gap-3">
             {service.content.map((content, index) => (
-              <div
+              <Link
+                to="/ourservice?scrollTo=BookVisitComponent"
                 key={index}
                 className="w-[21vh] md:w-[34vh] lg:w-[32vh] lg:h-[32vh] h-[21vh] md:h-[34vh] flex flex-col justify-center items-center"
               >
@@ -32,7 +34,7 @@ const ServicesDetailsComponent = () => {
                 <div className="w-full h-fit p-1 text-center border-[1px] border-black font-sans font-semibold">
                   {content.title}
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
