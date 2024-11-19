@@ -1,6 +1,7 @@
 import { Links, Social } from "../../data/Text/QuickLinks";
 import { logo } from "../../data/Images/images";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import LogoTextComponent from "./LogoTextComponent";
 
 interface LinkItem {
   text: string;
@@ -68,7 +69,7 @@ const QuickLinksComp: React.FC = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="md:hidden flex flex-col justify-center items-center">
         <div className="md:text-2xl text-lg text-white text-center">
           Get In Touch
         </div>
@@ -83,6 +84,9 @@ const QuickLinksComp: React.FC = () => {
             </Link>
           ))}
         </div>
+      </div>
+      <div className="md:block hidden">
+        <LogoTextComponent />
       </div>
       <div>
         <img

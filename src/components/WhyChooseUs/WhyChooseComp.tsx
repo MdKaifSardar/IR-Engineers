@@ -3,7 +3,7 @@ import { WhyChooseUsText } from "../../data/Text/WhyChooseUs";
 
 const WhyChooseComp = () => {
   return (
-    <div className="border-b-[2px] border-blue-900  lg:py-0 py-5 md:py-20 relative flex w-full lg:h-screen h-full flex-row justify-end items-center">
+    <div className="border-b-[2px] border-blue-900 lg:py-0 py-5 md:py-20 relative flex w-full lg:h-screen h-full flex-row justify-end items-center">
       <div className="lg:block hidden lg:w-full lg:h-screen h-full absolute left-[-20%] ">
         <img
           src={WhChU1}
