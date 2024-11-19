@@ -55,14 +55,14 @@ const NavbarSecond = ({ title }: { title: string }) => {
             Our Services
           </Link>
           <Link
-            to="/"
+            to="/ourservice?scrollTo=BookVisitComponent"
             className="md:text-xl text-md text-white font-sans font-semibold"
             onClick={handleScrollToTop}
           >
             Get a Visit
           </Link>
           <Link
-            to="/"
+            to="/ourservice?scrollTo=ContactUsComponent"
             className="md:text-xl text-md text-white font-sans font-semibold"
             onClick={handleScrollToTop}
           >
@@ -91,12 +91,18 @@ const NavbarSecond = ({ title }: { title: string }) => {
                 </Link>
               </li>
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/" onClick={handleScrollToTop}>
+                <Link
+                  to="/ourservice?scrollTo=BookVisitComponent"
+                  onClick={handleScrollToTop}
+                >
                   Get a Visit
                 </Link>
               </li>
               <li className="hover:bg-slate-700 px-4 py-2 rounded">
-                <Link to="/" onClick={handleScrollToTop}>
+                <Link
+                  to="/ourservice?scrollTo=ContactUsComponent"
+                  onClick={handleScrollToTop}
+                >
                   Contact Us
                 </Link>
               </li>

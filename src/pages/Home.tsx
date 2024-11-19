@@ -1,3 +1,4 @@
+import React from "react";
 import AboutComponent from "../components/About/AboutComponent";
 import CopyrightComponent from "../components/Copyright/CopyrightComponent";
 import HeroCompoent from "../components/Hero/HeroComponent";
@@ -9,16 +10,18 @@ import SidePopupComponent from "../components/SidePopup/SidePopup";
 import SiteVisitComponent from "../components/SiteVisit/SiteVisit";
 import WhyChooseComp from "../components/WhyChooseUs/WhyChooseComp";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <SidePopupComponent/>
+      <SidePopupComponent />
       <HeroCompoent />
       <AboutComponent />
       <OurServicesComp />
       <WhyChooseComp />
-      <OurClientsComponent />
+      <div id="OurClientsComponent">
+        <OurClientsComponent />
+      </div>
       <SiteVisitComponent />
       <QuickLinksComp />
       <CopyrightComponent />

@@ -20,7 +20,7 @@ const Links = [
         url: "/"
     },
     {
-        text: "Conntact Us",
+        text: "Contact Us",
         url: "/"
     },
 ]
@@ -32,12 +32,12 @@ const Social = [
         image: facebookURL
     },
     {
-        text: "Facebook",
+        text: "Instagram",
         url: "/",
         image: instaURL
     },
     {
-        text: "Facebook",
+        text: "Google",
         url: "/",
         image: GoogleURL
     },

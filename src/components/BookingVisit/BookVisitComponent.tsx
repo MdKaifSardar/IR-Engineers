@@ -1,7 +1,7 @@
 import { Contact1, Contact2 } from "../../data/Images/images";
 import ContactForm from "./ContactForm";
 
-const WhyChooseComp = () => {
+const BookVisitComponent = () => {
   return (
     <div className="border-b-[2px] border-blue-900 lg:py-0 py-10 md:py-10 relative flex w-full lg:h-screen h-fit flex-row justify-end items-center">
       <div className="lg:block hidden lg:w-full lg:h-screen h-full absolute left-[-10%]">
@@ -23,4 +23,4 @@ const WhyChooseComp = () => {
   );
 };
 
-export default WhyChooseComp;
+export default BookVisitComponent;

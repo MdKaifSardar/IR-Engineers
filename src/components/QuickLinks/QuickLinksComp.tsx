@@ -1,10 +1,54 @@
 import { Links, Social } from "../../data/Text/QuickLinks";
 import { logo } from "../../data/Images/images";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
-const QuickLinksComp = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+interface LinkItem {
+  text: string;
+  url: string;
+}
+
+const QuickLinksComp: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLinkClick = (link: LinkItem) => {
+    const currentPath = location.pathname;
+
+    // Links that should just navigate to their URLs
+    if (link.text === "Our Services" || link.text === "Why Choose Us") {
+      navigate(link.url);
+      return;
+    }
+
+    const componentMap: Record<string, { path: string[]; scrollTo: string }> = {
+      "Our Clients": {
+        path: ["/", "/ourservice", "/whychooseus"],
+        scrollTo: "OurClientsComponent",
+      },
+      "Book A Visit": {
+        path: ["/ourservice", "/whychooseus"],
+        scrollTo: "BookVisitComponent",
+      },
+      "Contact Us": {
+        path: ["/ourservice"],
+        scrollTo: "ContactUsComponent",
+      },
+    };
+
+    const target = componentMap[link.text];
+
+    if (target) {
+      if (target.path.includes(currentPath)) {
+        // Scroll within the same page
+        const element = document.getElementById(target.scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // Navigate to the target page with scrollTo parameter
+        navigate(`${target.path[0]}?scrollTo=${target.scrollTo}`);
+      }
+    }
   };
 
   return (
@@ -14,14 +58,13 @@ const QuickLinksComp = () => {
           Quick Links
         </span>
         {Links.map((link, index) => (
-          <Link
-            to={link.url}
+          <button
             key={index}
             className="text-left text-white sm:text-xl text-sm"
-            onClick={handleLinkClick}
+            onClick={() => handleLinkClick(link)}
           >
             {link.text}
-          </Link>
+          </button>
         ))}
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -30,7 +73,7 @@ const QuickLinksComp = () => {
         </div>
         <div className="flex flex-row justify-center items-center">
           {Social.map((link, index) => (
-            <Link to={link.url} key={index} onClick={handleLinkClick}>
+            <Link to={link.url} key={index}>
               <img
                 className="h-8 md:h-10 w-8 md:w-10"
                 src={link.image}
